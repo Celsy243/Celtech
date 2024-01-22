@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+        <title>Fleursy shoping</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="cercle"></div>
+            <header>
+                <a href="#">
+                    <img src="CELTECH LOGO.png" class="logo">
+                </a>
+            </header>
+            <div class="container">
+                <div class="texte">
+                    <h2>Fleusy shoping<br><span>Mode & <br>Designe</span></h2>
+                    <p>Vente des articles de mode et scolaire mais aussi
+                        les pagnes de qualité pour de femmes de valeurs
+                        nous sommes la reference et la qualité a des prix
+                        imbatable ,nous vous livrons partout a kinshasa
+                        passé vos commande de maintenant..
+                    </p>
+                    <a href="mailto:celsykongo@gmail.com">Nous contacter</a>
+                </div>
+                <div class="imgBox">
+                    <img src="" class="ferari">
+                </div>
+            </div>
+            <ul class="catalogue">
+                <li><img src="sac.png" onclick="imgSlider('sac.png');changeCouleurCercle('#f43839')"></li>
+                <li><img src="body1.png"onclick="imgSlider('body1.png');changeCouleurCercle('#2dc250')"></li>
+                <li><img src="jacket noir.png"onclick="imgSlider('jacket noir.png');changeCouleurCercle('#939090')"></li>
+                <li><img src="body bleu.png"onclick="imgSlider('body bleu.png');changeCouleurCercle('#9dbfcc')"></li>
+            </ul>
+            <ul class="reseau">
+                <li><a href="https://www.facebook.com/"><img src="fb.png"></a></li>
+                <li><a href="https://www.instagram.com/?hl=fr"><img src="insta.png"></a></li>
+                <li><a href="https://www.youtube.com/"><img src="youtube.png"></a></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.ferari').src = anything;
+            }
+            function changeCouleurCercle(color){
+                const cercle = document.querySelector('.cercle');
+                cercle.style.background = color;
+            }
+
+        </script>
+    </body>
+</html>
